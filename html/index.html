@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/image_2.png">
+    <title>Graduation project</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/node_modules/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <!-- This page CSS -->
+    <!-- chartist CSS -->
+    <link href="../assets/node_modules/morrisjs/morris.css" rel="stylesheet">
+    <!--c3 CSS -->
+    <link href="../assets/node_modules/c3-master/c3.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Dashboard 1 Page CSS -->
+    <link href="css/pages/dashboard1.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header fix-sidebar card-no-border" onLoad="init()">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">Graduation Project</p>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="../assets/images/image_2.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="../assets/images/image_2.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                           <b>Doctor Portal </b></a>
+                            
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up waves-effect waves-dark" href="javascript:void(0)"><i class="fa fa-bars"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item hidden-xs-down search-box"> <a class="nav-link hidden-sm-down waves-effect waves-dark" href="javascript:void(0)"><i class="fa fa-search"></i></a>
+                            <form class="app-search">
+                                <input type="text" class="form-control" placeholder="Search & enter"> <a class="srh-btn"><i class="fa fa-times"></i></a></form>
+                        </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav my-lg-0">
+                        <!-- ============================================================== -->
+                        <!-- Profile -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown u-pro">
+                            <a class="btn btn-danger live-btn" href="file:///C:/Users/HP/Desktop/Graduation Project Website/main/index.html" aria-expanded="false"><span class="hide-menu"><b>Logout</b></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li> <a class="waves-effect waves-dark" href="index.html" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu"><b>HomePage</b></span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="pages-profile.html" aria-expanded="false"><i class="fa fa-user-circle-o"></i><span class="hide-menu"><b>Prescription</b></span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="table-basic.html" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu"><b>History</b></span></a>
+                        </li>                                      
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid" style="background-color: dimgrey">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-5 align-self-center">
+                        <h3 class="text-themecolor"><b>HomePage</b></h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)"><b>Home</b></a></li>
+                            <li class="breadcrumb-item active">HomePage</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+               
+                <!-- ============================================================== -->
+               
+                <!-- ============================================================== -->
+                <div class="row">
+                    
+                    <!-- Column -->
+                     <div class="col-13" >
+                    <!-- Column -->
+                    
+                        <div align="col-md-5 align-self-center">
+                        <div class="card">
+                            
+                            <div class="card-body">
+                               
+                                     <script>
+                                window.onload = function () {
+
+                                var chart = new CanvasJS.Chart("chartContainer", {
+                                    exportEnabled: true,
+                                    animationEnabled: true,
+                                    title:{
+                                        text: "Most Frequently Medicine Used by the Patients"
+                                    },
+                                    legend:{
+                                        cursor: "pointer",
+                                        itemclick: explodePie
+                                    },
+                                    data: [{
+                                        type: "pie",
+                                        showInLegend: true,
+                                        toolTipContent: "{name}: <strong>{y}%</strong>",
+                                        indexLabel: "{name} - {y}%",
+                                        dataPoints: [
+                                            { y: 10, name: "Paracetamol" },
+                                            { y: 15, name: "Ibuprofen" },
+                                            { y: 5, name: "Aspirin" },
+                                            { y: 5, name: "Dextromethorphan" },
+                                            { y: 7, name: "Ranitidine" },
+                                            { y: 17, name: "Robafen" },
+                                            { y: 50, name: "Panadol", exploded: true}
+                                        ]
+                                    }]
+                                });
+                                chart.render();
+                                }
+
+                                function explodePie (e) {
+                                    if(typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
+                                        e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
+                                    } else {
+                                        e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
+                                    }
+                                    e.chart.render();
+
+                                }
+                                </script>
+                            
+                        
+                        <div id="chartContainer" style="height: 370px; width: 100%;" ></div>
+                        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                        
+                                <p>
+                                --The Daigram shows the most taken and prescribe medicienes to the patient. It tells about the percentage of the comsumed medicince by the given prescription of the doctor.--</p>
+
+                            </div>
+                        </div>
+                    </div>
+                         
+                    <!-- Column -->
+                    
+                         
+                         
+                </div>
+                    
+                    
+                    <!-- Column -->
+                     <div class="col-13">
+                    <!-- Column -->
+                    
+                        <div align="left">
+                        <div class="card" >
+                            
+                            <div class="card-body">
+                                <h2 class=" card-title"><b>Review About Our Project</b></h2>
+                                <span class="label label-info label-rounded"><b>Review</b></span>
+                                <p class="m-b-0 m-t-17">With many new health technology companies, IoT is rapidly revolutionizing the healthcare industry. Due to lack of proper health monitoring, patient suffer from serious health issues. In the aging population and the increasing healthcare cost in hospitals are beginning to start of remote health monitoring systems. Advances in physiological sensing devices and the emergence of reliable low-power wireless network technologies have enabled the design of remote health monitoring systems. The next generation Internet, commonly referred to as Internet of Things (IoT), depicts a world populated by devices that can sense, process and react via the Internet. Thus, the intent of our work is to automate a medicine dispenser system combined with cloud based services to simulate pharmacy works. The proposed dispenser is a stand-alone tool, capable of releasing pills to the users based on the prescriptions suggested by clinicians without the need to manually visit the clinician. The methodology is found to reduce the waiting time of patients at hospitals and pharmacies and ensures privacy and independence among the patients.
+                                </p>
+                                <p>
+                                
+                                </p>
+                                <p>
+                                Developing the automated medicine dispenser would be in terms of health parameters and frameworks, wireless communication and security issues. So, we have decided to make an internet of things based healthcare project for people who provide them all the personal information about their health on their mobile and they can check their all historical health data. The best part of this project is that it can be used by everyone and make our health management easier than available systems.</p>
+                                <div class="d-flex m-t-20">
+                                    <a class="link" href="javascript:void(0)"><b>Read more</b></a>
+                                    <div class="ml-auto align-self-center">
+                                        <a href="javascript:void(0)" class="link m-r-10"><i class="fa fa-heart-o"></i></a>
+                                        <a href="javascript:void(0)" class="link m-r-10"><i class="fa fa-share-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                         
+                    <!-- Column -->
+                    
+                         
+                         
+                </div>
+                    
+                    
+                    
+                    
+                <!-- Column -->
+
+                <!-- ============================================================== -->
+                <!-- End Sales Chart -->
+                <!-- ============================================================== -->
+
+
+                <!-- ============================================================== -->
+                
+
+                                    
+                
+                    
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer" style="background-color: dimgrey" >
+              <b style="color:white;">  © 2020 graduation project </b>
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/node_modules/jquery/jquery.min.js"></script>
+    <!-- Bootstrap popper Core JavaScript -->
+    <script src="../assets/node_modules/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/node_modules/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+    <!--morris JavaScript -->
+    <script src="../assets/node_modules/raphael/raphael-min.js"></script>
+    <script src="../assets/node_modules/morrisjs/morris.min.js"></script>
+    <!--c3 JavaScript -->
+    <script src="../assets/node_modules/d3/d3.min.js"></script>
+    <script src="../assets/node_modules/c3-master/c3.min.js"></script>
+    <!-- Chart JS -->
+    <script src="js/dashboard1.js"></script>
+</body>
+
+</html>
