@@ -50,13 +50,13 @@
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.html">
                         <!-- Logo icon --><b>
-                            
-                            
+
+
                             <img src="../assets/images/image_2.png" alt="homepage" class="dark-logo" />
                             <!-- Light Logo icon -->
                             <img src="../assets/images/image_2.png" alt="homepage" class="light-logo" />
                         </b>
-                        
+
                         <!-- Logo text -->
                        <b>Admin Portal</b></a>
                 </div>
@@ -85,7 +85,7 @@
                         <!-- Profile -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown u-pro">
-                            <a class="btn btn-danger live-btn" href="file:///C:/Users/HP/Desktop/Graduation Project Website/main/index.html" aria-expanded="false"><span class="hide-menu"><b>Logout</b></span></a>
+                            <a class="btn btn-danger live-btn" href="/index.html" aria-expanded="false"><span class="hide-menu"><b>Logout</b></span></a>
                         </li>
                     </ul>
                 </div>
@@ -114,7 +114,7 @@
                         <li> <a class="waves-effect waves-dark" href="admin-history.html" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu"><b>Paitents Database</b></span></a>
                         </li>
                     </ul>
-                    
+
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
@@ -142,7 +142,7 @@
                             <li class="breadcrumb-item active">New Patient</li>
                         </ol>
                     </div>
-                    
+
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Bread crumb and right sidebar toggle -->
@@ -151,13 +151,13 @@
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
                 <!-- Row -->
-                
+
                 <form action="admininsert.php" method="POST">
                 <div class="row">
                     <!-- Column -->
-                    
+
                     <!-- Column -->
-                    
+
                     <div class="col-lg-9 col-xlg-12 col-md-12">
                         <div class="card">
                             <!-- Tab panes -->
@@ -169,12 +169,12 @@
                                             <input type="text" name="PatientsName" placeholder=" " class="form-control form-control-line">
                                         </div>
                                     </div>
-                                    
+
                                     <div class="form-group">
                                         <label for="MachineID" class="col-md-12"><b>Machine ID</b></label>
-                                           <div id="Machine">
-                                            <select id="MachineID" name="MachineID">
-                                                <option value disalbe selected>Machine ID?</option>
+                                           <div id="Machine" class="col-md-12">
+                                            <select id="MachineID" name="MachineID" >
+                                                <option value disalbe selected>Select</option>
                                                 <option value="12345" >12345</option>
                                                 <option value="12223" >12223</option>
                                                 <option value="23456" >23456</option>
@@ -182,61 +182,61 @@
                                                 <option value="94786" >94786</option>
                                             </select>
                                       </div>
-                                        </div>  
-                                    
+                                        </div>
+
                                     <div class="form-group">
                                         <label for="Gender" class="col-md-12"><b>Gender</b></label>
                                         <div class="col-md-12">
                                             <input type="text" name="Gender" placeholder=" " class="form-control form-control-line">
                                         </div>
                                     </div>
-                                    
+
                                     <div class="form-group">
                                         <label for="Age" class="col-md-12"><b>Age</b></label>
                                         <div class="col-md-12">
                                             <input type="text" name="Age" placeholder=" " class="form-control form-control-line">
                                         </div>
                                     </div>
-                                    
+
                                     <div class="form-group">
                                         <label for="Email" class="col-md-12"><b>Email</b></label>
                                         <div class="col-md-12">
                                             <input type="email" placeholder=" " class="form-control form-control-line" name="Email" id="example-email">
                                         </div>
                                     </div>
-                                    
-                                    
-                                    
+
+
+
                                     <div class="form-group">
                                         <label class="col-md-12"><b>Phone No</b></label>
                                         <div class="col-md-12">
                                             <input type="text" name="PhoneNo" placeholder=" " class="form-control form-control-line">
                                         </div>
                                     </div>
-                                    
+
                                     <div class="form-group">
                                         <label class="col-md-12"><b>Medical History</b></label>
                                         <div class="col-md-12">
                                             <textarea rows="5" name="MedicalHistory" class="form-control form-control-line"></textarea>
                                         </div>
                                     </div>
-                                    
-                                    
-                                    
+
+
+
                                      <div class="form-group">
                                         <label class="col-md-12"><b>Medicines Taken Previously</b></label>
                                         <div class="col-md-12">
                                             <textarea rows="5" name="MedicinesTakenPreviously" class="form-control form-control-line"></textarea>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="form-group">
                                         <label for="Date" class="col-md-12"><b>Date</b></label>
                                         <div class="col-md-12">
                                             <input type="date" name="Date" placeholder=" " class="form-control form-control-line">
                                         </div>
                                     </div>
-                                    
+
                                     <div class="form-group">
                                         <div class="col-sm-12">
                                             <button type="submit" value="submit"  class="btn btn-success"><b>Add</b></button>
@@ -246,7 +246,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Column -->
                 </div>
                 <!-- Row -->
@@ -290,7 +290,7 @@
     <script src="js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="js/custom.min.js"></script>
-    
+
     <script src="js/jquery.min.js"></script>
 </body>
 

@@ -47,7 +47,16 @@
                 <!-- ============================================================== -->
                 <!-- Logo -->
                 <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                            <img src="../assets/images/image_2.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="../assets/images/image_2.png" alt="homepage" class="light-logo" />
+                        </b>
 
+                        <!-- Logo text -->
+                       <b>Doctor Portal</b></a>
+                </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->
                 <!-- ============================================================== -->
@@ -65,16 +74,7 @@
                                 <input type="text" class="form-control" placeholder="Search & enter"> <a class="srh-btn"><i class="fa fa-times"></i></a> </form>
                         </li>
                     </ul>
-                    <div class="navbar-header", style=" padding-right: 500px">
-                        <a class="navbar-brand" href="index.html">
-                                <img src="../assets/images/image_2.png" alt="homepage" class="dark-logo" />
-                                <!-- Light Logo icon -->
-                                <img src="../assets/images/image_2.png" alt="homepage" class="light-logo" />
-                            </b>
 
-                            <!-- Logo text -->
-                           <b>Doctor Portal</b></a>
-                    </div>
                     <!-- ============================================================== -->
                     <!-- User profile and search -->
                     <!-- ============================================================== -->
@@ -83,7 +83,7 @@
                         <!-- Profile -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown u-pro">
-                            <a class="btn btn-danger live-btn" href="file:///C:/Users/HP/Desktop/Graduation Project Website/main/index.html" aria-expanded="false"><span class="hide-menu"><b>Logout</b></span></a>
+                            <a class="btn btn-danger live-btn" href="/index.html" aria-expanded="false"><span class="hide-menu"><b>Logout</b></span></a>
                         </li>
                     </ul>
                 </div>
@@ -194,7 +194,7 @@
 
                                     <div class="form-group">
                                         <label for="MedicinesOptions" class="col-md-12"><b>Medicines Name</b></label>
-                                           <div id="medicines">
+                                           <div id="medicines" class="col-md-12">
                                             <select id="MedicinesOptions" name="MedicinesName">
                                                 <option value disalbe selected>Medicines Name?</option>
                                                 <option value="Paracetamol" >Paracetamol</option>
@@ -211,7 +211,7 @@
 
                                         <div class="form-group">
                                         <label for="MedicinesOptions" class="col-md-12"><b>Time To Take In A Day</b></label>
-                                           <div id="medicines">
+                                           <div id="medicines" class="col-md-12">
                                             <select id="MedicinesOptions" name="MorningDoze">
                                                 <option value disalbe selected>-Morning Doze-</option>
                                                 <option value="After Food" >After Food</option>
@@ -238,10 +238,10 @@
 
 
                                     <div class="form-group">
-                                        <label class="col-md-12"><b>No of time to take Medicines</b></label>
-                                           <div id="TimePeriod">
+                                        <label class="col-md-12"><b>Frequency</b></label>
+                                           <div id="TimePeriod" class="col-md-12">
                                             <select id="TimePeriodOptions" name="NoOfTimeToTakeMedicines">
-                                                <option value disalbe selected>Time Period to take Medicines?</option>
+                                                <option value disalbe selected>Select</option>
                                                 <option value="1 day" >1 day</option>
                                                 <option value="5 day" >5 days</option>
                                                 <option value="1 week" >1 week</option>
