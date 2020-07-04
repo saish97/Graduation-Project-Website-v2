@@ -112,7 +112,7 @@
             </li>
             <li> <a class="waves-effect waves-dark" href="admin-add new machine.html" aria-expanded="false"><i class="fa fa-user-circle-o"></i><span class="hide-menu"><b>Add New Machine</b></span></a>
             </li>
-            <li> <a class="waves-effect waves-dark" href="admin-history.html" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu"><b>Paitents Database</b></span></a>
+            <li> <a class="waves-effect waves-dark" href="admin-history.html" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu"><b>Database</b></span></a>
             </li>
           </ul>
 
@@ -159,14 +159,13 @@
                 <h4 class="card-title"><b>History</b></h4>
               </div>
               <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Patients</button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')">Doctors</button>
-                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Machines</button>
+                <button class="tablinks" onclick="openCity(event, 'London')" >Patients</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')" >Doctors</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')" id="defaultOpen">Machines</button>
               </div>
 
               <!-- Tab content -->
               <div id="London" class="tabcontent">
-                <h3>Patients</h3>
                 <div class="table-responsive">
                   <table class="table">
                     <thead>
@@ -273,13 +272,138 @@
               </div>
 
               <div id="Paris" class="tabcontent">
-                <h3>Doctors</h3>
-                <p>Paris is the capital of France.</p>
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th><b>#</b></th>
+                        <th><b>Doctor's Name</b></th>
+                        <th><b>Employee ID</b></th>
+                        <th><b>Gender</b></th>
+                        <th><b>Age</b></th>
+                        <th><b>Email</b></th>
+                        <th><b>Phone No</b></th>
+                        <th><b>Hospital Name</b></th>
+                        <th><b>Date of Joining</b></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Dr. Ahmed Ali</td>
+                        <td>12345</td>
+                        <td>Male</td>
+                        <td>36</td>
+                        <td>ahmed.a@dha.ae</td>
+                        <td>0501234567</td>
+                        <td>Dubai Hospital</td>
+                        <td>12/23/2019</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Dr. Sam Robson</td>
+                        <td>12223</td>
+                        <td>Male</td>
+                        <td>40</td>
+                        <td>sam.r@dha.ae</td>
+                        <td>055107631</td>
+                        <td>Rashid Hospital</td>
+                        <td>04/15/2029</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Dr. Leticia Dsouza</td>
+                        <td>45678</td>
+                        <td>Female</td>
+                        <td>42</td>
+                        <td>letitia.d@dha.ae</td>
+                        <td>056326636</td>
+                        <td>Dubai Hospital</td>
+                        <td>05/29/2020</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Dr. Pam Halpert</td>
+                        <td>94786</td>
+                        <td>Female</td>
+                        <td>38</td>
+                        <td>pam.h@dha.ae</td>
+                        <td>050756453</td>
+                        <td>Maktoum Hospital</td>
+                        <td>06/01/2020</td>
+                      </tr>
+                      <tr>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
 
               <div id="Tokyo" class="tabcontent">
                 <h3>Machines</h3>
-                <p>Tokyo is the capital of Japan.</p>
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th><b>Owner's Name</b></th>
+                        <th><b>Machine ID</b></th>
+                        <th><b>Owner's Email</b></th>
+                        <th><b>Location</b></th>
+                        <th><b>Machine Status</b></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Austin</td>
+                        <td>A12345</td>
+                        <td>ali123@yahoo.com</td>
+                        <td>Al Barsha</td>
+                        <td style='font-size:20px'>&#9989;</td>
+                    </tr>
+                      <tr>
+                        <td>Muskan</td>
+                        <td>M12223</td>
+                        <td>muskan002@gmail.com	</td>
+                        <td>Oud Metha</td>
+                        <td style='font-size:20px'>&#9989;</td>
+                      </tr>
+                      <tr>
+                        <td>Raj</td>
+                        <td>R45678</td>
+                        <td>raj@hotmail.com	</td>
+                        <td>Bur Dubai</td>\
+                        <td style='font-size:20px'>&#10071;</td>
+                      </tr>
+                      <tr>
+                        <td>Kriti</td>
+                        <td>K94786</td>
+                        <td>kriti.2222@yahoo.com	</td>
+                        <td>JLT</td>
+                        <td style='font-size:20px'>&#9940;</td>
+                      </tr>
+                      <tr>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
 
             </div>
